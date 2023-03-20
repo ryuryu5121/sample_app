@@ -12,6 +12,7 @@ gem "sprockets-rails"
 # Use postgresql as the database for Active Record
 gem "bootstrap-sass", "3.4.1"
 
+gem "bcrypt", "3.1.18"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
