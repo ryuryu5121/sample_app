@@ -86,9 +86,26 @@ footer {
             margin-left: 15px;
         }
     }
+}
 
-  }
-  
+@media (max-width: 800px) {
+    footer {
+        small {
+        display: block;
+        float: none;
+        margin-bottom: 1em;
+        }
+        ul {
+        float: none;
+        padding: 0;
+          li {
+            float: none;
+            margin-left: 0;
+          }
+        }
+    }
+}
+
 /* miscellaneous */
 
 .debug_dump {
@@ -96,7 +113,7 @@ footer {
     float: left;
     width: 100%;
     margin-top: 45px;
-  }
+}
 
   /* sidebar */
 
@@ -124,16 +141,16 @@ aside {
         margin-top: 0px;
       }
     }
-  }
-  
-  .gravatar {
+}
+
+.gravatar {
     float: left;
     margin-right: 10px;
-  }
-  
-  .gravatar_edit {
+}
+
+.gravatar_edit {
     margin-top: 15px;
-  }
+}
 
 /* mixins, variables, etc. */
 
@@ -171,4 +188,10 @@ height: auto !important;
     .form-control {
         color: $state-danger-text;
     }
+}
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+    display: block;
 }
