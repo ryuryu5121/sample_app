@@ -65,29 +65,47 @@ h1, h2, h3, h4, h5, h6 {
   /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: $gray-light;
-  a {
-      color: #555;
-      &:hover {
-          color: #222;
-      }
-  }
-  small {
-      float: left;
-  }
-  ul {
-      float: right;
-      list-style: none;
-      li {
-          float:left;
-          margin-left: 15px;
-      }
-  }
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: $gray-light;
+    a {
+        color: #555;
+        &:hover {
+            color: #222;
+        }
+    }
+    small {
+        float: left;
+    }
+    ul {
+        float: right;
+        list-style: none;
+        li {
+            float:left;
+            margin-left: 15px;
+        }
+    }
 }
-  
+
+@media (max-width: 800px) {
+    footer {
+        small {
+        display: block;
+        float: none;
+        margin-bottom: 1em;
+        }
+        ul {
+        float: none;
+        padding: 0;
+          li {
+            float: none;
+            margin-left: 0;
+          }
+        }
+    }
+}
+
 /* miscellaneous */
 
 .debug_dump {
@@ -123,16 +141,16 @@ aside {
         margin-top: 0px;
       }
     }
-  }
-  
-  .gravatar {
+}
+
+.gravatar {
     float: left;
     margin-right: 10px;
-  }
-  
-  .gravatar_edit {
+}
+
+.gravatar_edit {
     margin-top: 15px;
-  }
+}
 
 /* mixins, variables, etc. */
 
@@ -170,4 +188,10 @@ height: auto !important;
     .form-control {
         color: $state-danger-text;
     }
+}
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+    display: block;
 }
