@@ -5,6 +5,6 @@ document.addEventListener("turbo:load", function() {
     if (size_in_megabytes > 5) {
       alert("Maximum file size is 5MB. Please choose a smaller file.");
       image_upload.value = "";
-      }
-    });
+    }
   });
+});
