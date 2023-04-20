@@ -25,14 +25,14 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
-  
+
   h1 {
     font-size: 3em;
     letter-spacing: -2px;
     margin-bottom: 30px;
     text-align: center;
   }
-  
+
   h2 {
     font-size: 1.2em;
     letter-spacing: -1px;
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color:$gray-light;
   }
-  
+
   p {
     font-size: 1.1em;
     line-height: 1.7em;
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
   }
 }
-  
+
   /* footer */
 
 footer {
@@ -150,6 +150,44 @@ aside {
 
 .gravatar_edit {
     margin-top: 15px;
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
 }
 
 /* mixins, variables, etc. */
